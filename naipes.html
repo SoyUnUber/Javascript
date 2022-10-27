@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naipes</title>
+    </head>
+    <style type="text/css">
+
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            background: linear-gradient(#000, deeppink);
+            box-sizing: border-box;
+
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 5px solid red;
+        }
+
+        div:nth-child(1)
+        {
+            background: green;
+            width: 590px;
+            height: 810px;
+        }
+
+        div:nth-child(2)
+        {
+            width: 590px;
+            height: 810px;
+            background: green;
+            transform: translate(-895px);
+        }
+
+        div:nth-child(3)
+        {
+            background: green;
+            transform: translate(895px);
+            width: 590px;
+            height: 810px;
+        }
+
+    
+
+    </style>
+
+    <body>
+        <section>
+            <div id="box0"></div>
+            <div id="box1"></div>
+            <div id="box2"></div>
+        </section>
+        <script type="text/javascript">
+
+            const a=document.getElementById("box0")
+            a.addEventListener("click", imagen);
+            function imagen()
+            {
+                a.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1023209489291292704/1035313613679894579/746px-As_corazones_1.png')";
+                
+                
+            }
+
+        </script>
+
+    <script type="text/javascript">
+
+    const b=document.getElementById("box1")
+    b.addEventListener("click", imagen);
+    function imagen()
+    {
+        b.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1023209489291292704/1035314661232488489/As_trebol_1.png')";
+        
+        
+    }
+
+  </script>
+ 
+ <script type="text/javascript">
+
+    const c=document.getElementById("box2")
+    c.addEventListener("click", imagen);
+    function imagen()
+    {
+        c.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1023209489291292704/1035314661232488489/As_trebol_1.png')";
+        
+        
+    }
+
+  </script>
+
+    </body>
+</html>
