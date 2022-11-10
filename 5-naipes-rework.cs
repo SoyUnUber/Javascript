@@ -50,6 +50,7 @@
     .cartabox:hover .carta
     {
         transform: rotateY(180deg);
+        background-image: url("https://media.discordapp.net/attachments/1023209489291292704/1040285550759903313/As_trebol_1_1.png");
     }
 
 .cartatrasera
