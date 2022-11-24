@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+
+
+body{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ padding: 0;
+ margin: 0;
+ background: black;
+ display: flex;
+ min-height: 100vh;
+ 
+}
+
+
+.box{
+    perspective: 500px;
+    margin: 15px;
+    
+    
+}
+
+
+.box:hover .carta{
+    transform: rotateY(180deg);
+
+}
+
+carta-frontal, .carta-trasera{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    backface-visibility: hidden;
+
+}
+
+
+.carta-trasera{
+    width: 100px;
+    height: 150px;
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+.carta-frontal{
+    position: absolute;
+    font-size: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta{
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background: green;
+    transform-style: preserve-3d;
+    transition: .6s ease;
+    border: white solid;
+
+}
+
+
+    
+
+</style>
+
+<div class="yo">
+<div class="box">
+    <div class="carta">
+             <div class="carta-frontal"> </div>
+             <div class="carta-trasera"> </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="yo0">
+    <div class="box">
+        <div class="carta">
+                 <div class="carta-frontal"> </div>
+                 <div class="carta-trasera"> </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="box">
+            <div class="carta">
+                     <div class="carta-frontal"> </div>
+                     <div class="carta-trasera"> </div>
+                  </div>
+              </div>
+
+            
+            <div class="box">
+                <div class="carta">
+                         <div class="carta-frontal"> </div>
+                         <div class="carta-trasera"> </div>
+                      </div>
+                  </div>
+
+              
+                <div class="box">
+                    <div class="carta">
+                             <div class="carta-frontal"> </div>
+                             <div class="carta-trasera"> </div>
+                          </div>
+                      </div>
+
+                  
+                    <div class="box">
+                        <div class="carta">
+                                 <div class="carta-frontal"> </div>
+                                 <div class="carta-trasera"> </div>
+                              </div>
+                          </div>
+
+  </div>
+ </div>
+
+
+
+</body>
+</html>
